@@ -1,0 +1,872 @@
+ <!-- 1 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <!-- Links go here -->
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <!-- Page content -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 City Council
+  </footer>
+</body>
+</html>
+
+
+ <!-- 2 -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navigation</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background: linear-gradient(135deg, #2c3e50, #4a6fa5);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        
+        nav a:active {
+            transform: translateY(0);
+        }
+        
+        /* Help link style */
+        nav a[target="_blank"] {
+            background-color: #e74c3c;
+            float: right;
+        }
+        
+        nav a[target="_blank"]:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #home {
+            background-color: #f8f9fa;
+        }
+        
+        #events {
+            background-color: #e9ecef;
+        }
+        
+        #contact {
+            background-color: #dee2e6;
+        }
+        
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        
+        section p {
+            max-width: 800px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                text-align: center;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            
+            nav a[target="_blank"] {
+                float: none;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Welcome Home</h2>
+        <p>Discover amazing experiences and connect with our community. Start your journey with us today.</p>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Explore our exciting lineup of events designed to inspire and engage.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. Reach out for questions, feedback, or partnership opportunities.</p>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- 3 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Offer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        
+        #welcomeBanner {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .highlight {
+            background-color: rgba(255,255,255,0.3);
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .offer-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .discount-badge {
+            display: inline-block;
+            background-color: #ff4757;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 10px 0;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .offer-text {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomeBanner">
+        Welcome back, <span class="highlight">James!</span> We're excited to see you again.
+    </div>
+    
+    <div class="offer-container">
+        <p class="offer-text">Don't miss this special offer just for you!</p>
+        <div class="discount-badge">20% OFF</div>
+        <p class="offer-text">Register now to claim your exclusive discount before it's gone!</p>
+    </div>
+</body>
+</html>
+
+
+<!-- 4 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Past Event Highlights</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .event-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .event-table caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 10px;
+            caption-side: top;
+            text-align: center;
+        }
+        
+        .event-table td {
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .eventImage {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #e0e0e0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .eventImage:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            border-color: #4a6fa5;
+        }
+        
+        .event-caption {
+            font-style: italic;
+            color: #7f8c8d;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            background-color: #f1f8fe;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .event-table tr {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .event-table td {
+                padding: 10px 0;
+            }
+            
+            .eventImage {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Community Events</h1>
+        
+        <table class="event-table">
+            <caption>Highlights from Past Events</caption>
+            <tr>
+                <td>
+                    <img src="img1.webp" alt="Concert" title="Music Concert" class="eventImage">
+                    <div class="img-caption">Annual Music Festival 2023</div>
+                </td>
+                <td>
+                    <img src="img2.avif" alt="Workshop" title="Art Workshop" class="eventImage">
+                    <div class="img-caption">Creative Arts Workshop</div>
+                </td>
+                <td>
+                    <img src="img3.jpg" alt="Cleanup Drive" title="Community Cleanup" class="eventImage">
+                    <div class="img-caption">Beach Cleanup Day</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="event-caption">
+                    These wonderful events brought our community together, creating lasting memories and meaningful connections!
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+<!-- 5 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        button {
+            background: #4a6fa5;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #3a5a80;
+        }
+        
+        #confirmation {
+            display: block;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Event Registration</h2>
+        <form onsubmit="showConfirmation(); return false;">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required autofocus>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="eventType">Event Type</label>
+            <select id="eventType" name="eventType" required>
+                <option value="">Choose Event</option>
+                <option value="music">Music Concert</option>
+                <option value="cleanup">Cleanup Drive</option>
+            </select>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Any special requests or notes..." required></textarea>
+            
+            <button type="submit">Register</button>
+            <output id="confirmation"></output>
+        </form>
+    </div>
+
+    <script>
+        function showConfirmation() {
+            const name = document.getElementById('name').value;
+            document.getElementById('confirmation').innerHTML = 
+                `Thank you, ${name}! Your registration was successful.`;
+            
+            // Optional: Reset form after submission
+            setTimeout(() => {
+                document.querySelector('form').reset();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 6 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Event Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+        }
+        
+        .phone-error {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .fee-display {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .char-count {
+            color: #7f8c8d;
+            font-size: 14px;
+            text-align: right;
+            margin-top: 5px;
+        }
+        
+        button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #27ae60;
+        }
+        
+        .image-preview {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .image-preview:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Event Registration</h2>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter 10-digit number" onblur="validatePhone(this)">
+            <div class="phone-error" id="phoneError">Please enter a valid 10-digit phone number</div>
+        </div>
+        
+        <div class="form-group">
+            <label for="event">Select Event</label>
+            <select id="event" onchange="displayFee(this.value)">
+                <option value="Free">Community Cleanup</option>
+                <option value="$10">Music Concert</option>
+                <option value="$15">Art Workshop</option>
+                <option value="$5">Local Farmers Market</option>
+            </select>
+            <div class="fee-display" id="feeDisplay"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="4" placeholder="Enter your comments here..." onkeyup="countChars(this.value)"></textarea>
+            <div class="char-count" id="charCount">Characters: 0</div>
+        </div>
+        
+        <button onclick="submitForm()">Submit Registration</button>
+        
+        <img src="img.jpg" class="image-preview" ondblclick="toggleImageSize(this)" alt="Event Preview">
+    </div>
+
+    <script>
+        function validatePhone(input) {
+            const phoneError = document.getElementById('phoneError');
+            if (!/^\d{10}$/.test(input.value)) {
+                phoneError.style.display = 'block';
+                input.style.borderColor = '#e74c3c';
+            } else {
+                phoneError.style.display = 'none';
+                input.style.borderColor = '#2ecc71';
+            }
+        }
+
+        function displayFee(value) {
+            const feeDisplay = document.getElementById('feeDisplay');
+            if (value === "Free") {
+                feeDisplay.textContent = "This is a free community event!";
+                feeDisplay.style.color = '#2ecc71';
+            } else {
+                feeDisplay.textContent = `Event Fee: ${value}`;
+                feeDisplay.style.color = '#3498db';
+            }
+            feeDisplay.style.display = 'block';
+        }
+
+        function countChars(val) {
+            document.getElementById('charCount').textContent = `Characters: ${val.length}`;
+        }
+
+        function toggleImageSize(img) {
+            if (img.style.width === '400px') {
+                img.style.width = '100%';
+            } else {
+                img.style.width = '400px';
+            }
+        }
+
+        function submitForm() {
+            // Form validation would go here
+            showNotification('Thank you! Your registration has been submitted.');
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.right = '20px';
+            notification.style.backgroundColor = '#2ecc71';
+            notification.style.color = 'white';
+            notification.style.padding = '15px 25px';
+            notification.style.borderRadius = '5px';
+            notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            notification.style.zIndex = '1000';
+            notification.style.animation = 'fadeIn 0.3s';
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'fadeOut 0.3s';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 7 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Promo Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .video-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .video-message {
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 10px 0;
+            display: none;
+        }
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h2>Watch Our Community Promo</h2>
+        <video controls id="promoVideo">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-message" id="readyMessage">
+            Video is ready to play!
+        </div>
+        <button class="btn" onclick="document.getElementById('promoVideo').play()">
+            <i class="fas fa-play"></i> Play Video
+        </button>
+    </div>
+
+    <script>
+        // Video ready notification
+        document.getElementById('promoVideo').addEventListener('canplay', function() {
+            const message = document.getElementById('readyMessage');
+            message.style.display = 'block';
+            setTimeout(() => {
+                message.style.display = 'none';
+            }, 3000);
+        });
+        
+        // Before unload confirmation only if video is playing
+        window.addEventListener('beforeunload', function(e) {
+            const video = document.getElementById('promoVideo');
+            if (!video.paused) {
+                e.preventDefault();
+                e.returnValue = 'Are you sure you want to leave? Your video is still playing.';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- 8 -->
+
+
+<select id="eventType" onchange="savePreference(this.value)">
+    <option value="">Select</option>
+    <option value="concert">Concert</option>
+    <option value="workshop">Workshop</option>
+  </select>
+  <button onclick="clearPrefs()">Clear Preferences</button>
+  
+  <script>
+    function savePreference(value) {
+      localStorage.setItem("eventType", value);
+    }
+  
+    window.onload = function () {
+      const saved = localStorage.getItem("eventType");
+      if (saved) document.getElementById("eventType").value = saved;
+    };
+  
+    function clearPrefs() {
+      localStorage.clear();
+      sessionStorage.clear();
+      alert("Preferences cleared.");
+    }
+  </script>
+  
+
+
+<!-- 9 -->
+
+
+<button onclick="findEvents()">Find Nearby Events</button>
+<p id="location"></p>
+
+<script>
+  function findEvents() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPos, showError, { enableHighAccuracy: true });
+    } else {
+      alert("Geolocation not supported.");
+    }
+  }
+
+  function showPos(position) {
+    document.getElementById('location').innerText =
+      `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`;
+  }
+
+  function showError(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED: alert("Permission denied"); break;
+      case error.TIMEOUT: alert("Timeout"); break;
+      default: alert("Error occurred");
+    }
+  }
+</script>
+
+
+<!-- 10 -->
+
+10. Debugging with Chrome DevTools
+
+
+Objective: Test and fix layout or script issues.
+
+Answer:
+
+Step 1 :- Open Chrome DevTools (F12).
+
+Step 2 :- Use Elements tab to inspect HTML and live-edit CSS.
+
+Step 3 :- Use Console tab to see errors, run console.log() statements.
+
+Step 4 :- Go to Sources tab, click on your script file, and set breakpoints.
+
+Step 5 :- Reload the page and watch values as your JS runs.

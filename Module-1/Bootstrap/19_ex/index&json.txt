@@ -1,0 +1,30 @@
+<!-- index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 5 Sass Customization</title>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body class="p-5">
+  <h1 class="text-primary">Custom Primary Color</h1>
+  <button class="btn btn-primary">Custom Styled Button</button>
+  <div class="card mt-4 p-3">
+    <p>This card has custom border-radius and color.</p>
+  </div>
+</body>
+</html>
+
+<!-- package.json file-->
+
+{
+  "name": "bootstrap-sass-custom",
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "sass scss/custom.scss dist/style.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.63.6"
+  }
+}

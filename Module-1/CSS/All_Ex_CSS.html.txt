@@ -1,0 +1,466 @@
+ <!-- 1 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              background-color: pink;
+            }
+
+            h1, h2 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Main content */
+  .content {
+    padding: 20px;
+  }
+  
+          </style>
+          
+    </head>
+    <body>
+        <h1 style="color: red;">Welcome to the Community Portal</h1>
+    </body>
+</html>
+
+
+ <!-- 2 -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.cta-button:hover {
+  background-color: #0066CC;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+  <button class="cta-button">Get Started Today</button>
+</body>
+</html>
+
+
+<!-- 3 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 20px 0;
+}
+#mainHeader {
+  background-color: #004d99;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.eventCard {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h3, p {
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+  <header id="mainHeader">
+    <h1>Community Events</h1>
+  </header>
+  
+  <div class="eventCard">
+    <h3>Summer Music Festival</h3>
+    <p>Join us for a weekend of live music and food trucks!</p>
+  </div>
+</body>
+</html>
+
+
+<!-- 4 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f5f5f5;
+  background-image: url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+h1 {
+  color: #2C3E50;
+  text-align: center;
+  margin: 20px 0;
+}
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+section.header {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+  <section class="header">
+    <h1>Upcoming Events</h1>
+  </section>
+  
+  <div class="eventCard">
+    <h2>Community Cleanup Day</h2>
+    <p>Help keep our neighborhood beautiful!</p>
+  </div>
+</body>
+</html>
+
+
+
+<!-- 5 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .description {
+            text-align: justify;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome to our community</h1>
+    
+    <div class="description">
+        <p>this is an example of well-styled typography using the roboto font family. notice how the text is justified and every word is capitalized thanks to the text-transform property. the letter spacing creates a pleasant reading experience, while the line height ensures good readability.</p>
+        
+        <p>the <span class="highlight">highlighted text</span> shows how you can combine these styles with other effects for emphasis. this clean, modern typography works well for both paragraphs and headings throughout your website.</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 6 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: #800080;
+}
+ul.nav {
+  list-style-type: none;
+  padding: 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+ul.nav li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+ul.nav li:hover {
+  background: #e9ecef;
+}
+ul.nav li:last-child {
+  border-bottom: none;
+}
+</style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</body>
+</html>
+
+
+<!-- 7 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: #004d99;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #e9e9e9;
+}
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Music Festival</td>
+      <td>June 15</td>
+      <td>City Park</td>
+    </tr>
+    <tr>
+      <td>Art Show</td>
+      <td>July 2</td>
+      <td>Community Center</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+
+<!-- 8 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.eventCard {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+input:focus {
+  outline: 2px solid #007BFF;
+  border-color: transparent;
+}
+.hidden {
+  visibility: hidden;
+}
+.none {
+  display: none;
+}
+</style>
+</head>
+<body>
+  <div class="eventCard">
+    <h3>Register for Event</h3>
+    <input type="text" placeholder="Your name">
+    <p class="hidden">This text is hidden but takes space</p>
+    <p class="none">This text is completely removed</p>
+  </div>
+</body>
+</html>
+
+
+
+<!-- 9 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.newsArticle {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid #ddd;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+h2 {
+  column-span: all;
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="newsArticle">
+    <h2>Community News</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</body>
+</html>
+
+
+<!-- 10 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background: #004d99;
+  border-radius: 8px;
+}
+nav ul li {
+  padding: 15px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4" alt="Community">
+    
+    <p>Welcome to our community website!</p>
+  </div>
+</body>
+</html>
+
+
+<!-- 11 -->
+
+11. Debug and Test with Dev Tools and VS Code
+Objective: Test and debug CSS.
+
+Answer:
+
+Step 1 :- Open Chrome DevTools (F12 or right-click > Inspect).
+
+Step 2 :- Use Device Toolbar (toggle device view) to test on different screen sizes.
+
+Step 3 :- Select any element → Styles tab to see applied styles and test live changes.
+
+Step 4 :- Use Network tab to verify external CSS file loads correctly (should show status 200).
